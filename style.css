@@ -4,38 +4,71 @@
     box-sizing: border-box;
 }
 
-#main-container{
+#main-container {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
 
-#nav-container{
+#nav-container {
+    padding: 1.5rem;
     background-color: royalblue;
 }
 
-#dashboard-container{
+#nav-list {
+    display: grid;
+    gap: 1rem;
+    justify-content: flex-start;
+    margin-top: 1rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+#logo {
+    font-size: 2rem;
+    font-weight: bold;
+    height: 10%;
+}
+
+#logo img {
+    height: 70%;
+}
+
+.list-item {
+    list-style: none;
+}
+
+.list-item img {
+    height: 2rem;
+}
+
+#dashboard-container {
     background-color: rebeccapurple;
 }
 
-.header-sub-section{
+.header-sub-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: antiquewhite;
 }
 
-#main-content-container{
+#main-content-container {
     display: grid;
     grid-template: repeat(auto-fit, minmax(150px, 1fr)) / 3fr 1fr;
     gap: 2rem;
 }
 
-#projects{
+#projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-#trending{
+#trending {
     grid-column: 2 / 3;
 }
