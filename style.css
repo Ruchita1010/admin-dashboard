@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#main-container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#nav-container{
+    background-color: royalblue;
+}
+
+#dashboard-container{
+    background-color: rebeccapurple;
+}
+
+.header-sub-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+#main-content-container{
+    display: grid;
+    grid-template: repeat(auto-fit, minmax(150px, 1fr)) / 3fr 1fr;
+    gap: 2rem;
+}
+
+#projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+#trending{
+    grid-column: 2 / 3;
+}
