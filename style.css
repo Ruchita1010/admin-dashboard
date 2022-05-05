@@ -148,17 +148,12 @@ input[type="search"] {
     background-color: rgb(155, 15, 155);
 }
 
-#project-section h2{
+.section-title {
     font-size: 1.6rem;
     margin-bottom: 1rem;
 }
 
-#announcements h2{
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-}
-
-#announcement-container{
+#announcements {
     font-size: 1rem;
     padding: 0.8rem;
     background-color: #22adc5;
@@ -173,7 +168,7 @@ input[type="search"] {
     padding: 1rem;
 }
 
-#trending-profiles {
+#trending-section {
     grid-column: 2 / 3;
 }
 
