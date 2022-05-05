@@ -145,6 +145,12 @@ input[type="search"] {
 #projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    background-color: rgb(155, 15, 155);
+}
+
+#project-section h2{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
 }
 
 #announcements h2{
