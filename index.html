@@ -10,84 +10,81 @@
 </head>
 
 <body>
-    <div id="main-container">
+    <div id="container">
 
-        <div id="nav-container">
+        <div id="navbar">
 
-            <div id="logo" class="nav-item">
-                <img src="https://img.icons8.com/material-sharp/48/000000/dashboard-layout.png" />
+            <div id="logo" class="navbar-item">
+                <img src="https://img.icons8.com/material-sharp/96/000000/dashboard-layout.png" />
                 <p>Dashboard</p>
             </div>
             <nav>
                 <ul id="nav-list">
-                    <li class="list-item nav-item">
-                        <img src="https://img.icons8.com/material-rounded/64/000000/home.png" />
+                    <li class="navbar-item">
+                        <img src="https://img.icons8.com/material-rounded/96/000000/home.png" />
                         <p>Home</p>
                     </li>
-                    <li class="list-item nav-item">
-                        <img src="https://img.icons8.com/small/64/000000/user.png" />
+                    <li class="navbar-item">
+                        <img src="https://img.icons8.com/small/96/000000/user.png" />
                         <p>Profile</p>
                     </li>
-                    <li class="list-item nav-item">
-                        <img src="https://img.icons8.com/material-rounded/64/000000/mail.png" />
+                    <li class="navbar-item">
+                        <img src="https://img.icons8.com/material-rounded/96/000000/mail.png" />
                         <p>Messages</p>
                     </li>
-                    <li class="list-item nav-item">
-                        <img src="https://img.icons8.com/material-rounded/64/000000/time-machine.png" />
+                    <li class="navbar-item">
+                        <img src="https://img.icons8.com/material-rounded/96/000000/time-machine.png" />
                         <p>History</p>
                     </li>
-                    <li class="list-item nav-item">
-                        <img src="https://img.icons8.com/material-rounded/64/000000/tasks.png" />
+                    <li class="navbar-item">
+                        <img src="https://img.icons8.com/material-rounded/96/000000/tasks.png" />
                         <p>Tasks</p>
                     </li>
-                    <li class="list-item nav-item">
-                        <img src="https://img.icons8.com/small/64/000000/conference-call.png" />
+                    <li class="navbar-item">
+                        <img src="https://img.icons8.com/small/96/000000/conference-call.png" />
                         <p>Communities</p>
                     </li>
-                    <li class="list-item nav-item">
-                        <img src="https://img.icons8.com/material-rounded/64/000000/settings.png" />
+                    <li class="navbar-item">
+                        <img src="https://img.icons8.com/material-rounded/96/000000/settings.png" />
                         <p>Settings</p>
                     </li>
-                    <li class="list-item nav-item">
-                        <img src="https://img.icons8.com/small/64/000000/help.png" />
+                    <li class="navbar-item">
+                        <img src="https://img.icons8.com/small/96/000000/help.png" />
                         <p>Support</p>
                     </li>
-                    <li class="list-item nav-item">
-                        <img src="https://img.icons8.com/material-rounded/64/000000/security-checked.png" />
+                    <li class="navbar-item">
+                        <img src="https://img.icons8.com/material-rounded/96/000000/security-checked.png" />
                         <p>Privacy</p>
                     </li>
                 </ul>
             </nav>
         </div>
 
-        <div id="dashboard-container">
+        <div id="dashboard">
             <header>
                 <div class="header-sub-section">
-                    <div id="search-container">
-                        <div id="search">
-                            <img src="https://img.icons8.com/glyph-neue/64/000000/search--v1.png" class="header-icon"/>
-                        </div>
-                            <input type="search" name="" id="search-bar">
+                    <div id="search">
+                        <img src="https://img.icons8.com/glyph-neue/96/000000/search--v1.png" class="icon" />
+                        <input type="search" name="search-bar" id="search-bar">
                     </div>
-                    <div id="profile-container">
-                        <img src="https://img.icons8.com/material-sharp/24/000000/appointment-reminders--v1.png" class="header-icon"/>
-                        <div class="header-icon">
-                            <img src="./images/yellow-one-eyed.png" alt=""class="header-icon" >
-                        </div>
-                        <p>Morgan</p>
+                    <div id="account">
+                        <img src="https://img.icons8.com/material-sharp/96/000000/appointment-reminders--v1.png"
+                            class="icon" />
+                        <img src="./images/yellow-one-eyed.png" alt="" class="icon" />
+                        <p class="username">Morgan Oakley</p>
                     </div>
                 </div>
                 <div class="header-sub-section">
-                    <div id="greeting-container">
-                        <div class="profile-img-container">
+                    <div id="admin-profile" class="profile">
+                        <div class="profile-picture">
                             <img src="./images/yellow-one-eyed.png" alt="">
                         </div>
                         <div id="greeting">
                             <p>Hi there, </p>
-                            <p id="username">Morgan Oakley <span>(@morgan)</span></p>
+                            <p class="username">Morgan Oakley <span>(@morgan)</span></p>
                         </div>
                     </div>
-                    <div id="buttons-container">
+                    <div id="buttons">
                         <input type="button" value="New">
                         <input type="button" value="Upload">
                         <input type="button" value="Share">
@@ -95,7 +92,7 @@
                 </div>
             </header>
 
-            <main id="main-content-container">
+            <main id="main-content">
                 <div id="projects">
                     <div class="project">
                         <h3>Project 1</h3>
@@ -137,27 +134,33 @@
                     </div>
                 </div>
 
-                <div id="trending">
-                    <div class="profile-container">
-                        <div>
+                <div id="trending-profiles">
+                    <div id="trending-profile" class="profile">
+                        <div class="profile-picture">
                             <img src="./images/one-eyed.png" alt="">
                         </div>
-                        <p>Morgan</p>
-                        <p>Lorem ipsum dolor.</p>
+                        <div class="trending-profile-details">
+                            <p>Morgan</p>
+                            <p>Lorem ipsum dolor.</p>
+                        </div>
                     </div>
-                    <div class="profile-container">
-                        <div class="profile-img-container">
+                    <div id="trending-profile" class="profile">
+                        <div class="profile-picture">
                             <img src="./images/five-eyed.png" alt="">
                         </div>
-                        <p>Morgan</p>
-                        <p>Lorem ipsum dolor.</p>
+                        <div class="trending-profile-details">
+                            <p>Morgan</p>
+                            <p>Lorem ipsum dolor.</p>
+                        </div>
                     </div>
-                    <div class="profile-container">
-                        <div>
+                    <div id="trending-profile" class="profile">
+                        <div class="profile-picture">
                             <img src="./images/zipper-mouth.png" alt="">
                         </div>
-                        <p>Morgan</p>
-                        <p>Lorem ipsum dolor.</p>
+                        <div class="trending-profile-details">
+                            <p>Morgan</p>
+                            <p>Lorem ipsum dolor.</p>
+                        </div>
                     </div>
                 </div>
 
