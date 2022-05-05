@@ -113,11 +113,11 @@ input[type="search"] {
     display: flex;
 }
 
-#greeting p:nth-child(1){
+#greeting p:nth-child(1) {
     font-size: 1.2rem;
 }
 
-#greeting p:nth-child(2){
+#greeting p:nth-child(2) {
     font-size: 2rem;
 }
 
@@ -129,7 +129,7 @@ input[type="search"] {
     flex-wrap: wrap;
 }
 
-#buttons > input[type="button"]{
+#buttons > input[type="button"] {
     padding: 0.6rem 1.6rem;
     font-size: 1rem;
     border-radius: 2rem;
@@ -139,11 +139,32 @@ input[type="search"] {
     display: grid;
     gap: 2rem;
     grid-template: repeat(auto-fit, minmax(150px, 1fr)) / 3fr 1fr;
+    padding: 2rem;
 }
 
 #projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+#announcements h2{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+#announcement-container{
+    font-size: 1rem;
+    padding: 0.8rem;
+    background-color: #22adc5;
+}
+
+.announcement:not(:last-child) {
+    padding: 0.8rem;
+    border-bottom: 1px solid #080808;
+}
+
+.announcement:last-child{
+    padding: 1rem;
 }
 
 #trending-profiles {
