@@ -90,9 +90,11 @@ input[type="search"] {
     width: 1.8rem;
 }
 
-.profile-picture {
-    width: 4rem;
-    height: 4rem;
+.username {
+    font-weight: bold;
+}
+
+.profile-picture {   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,6 +112,8 @@ input[type="search"] {
 }
 
 #admin-profile > .profile-picture {
+    width: 5rem;
+    height: 5rem;
     margin-right: 1rem;
 }
 
@@ -211,7 +215,11 @@ input[type="search"] {
     align-items: center;
 }
 
+.trending-profile > .profile-picture {
+    width: 4rem;
+    height: 4rem;
+}
+
 .trending-profile-details {
     margin-left: 1rem;
 }
-
