@@ -22,7 +22,7 @@
     margin-top: 1rem;
 }
 
-#nav-list li{
+#nav-list li {
     list-style: none;
 }
 
@@ -40,11 +40,11 @@
 }
 
 #logo img {
-    height: 70%;
+    height: 50%;
 }
 
 .navbar-item img {
-    height: 2.2rem;
+    height: 2.1rem;
 }
 
 /* ------------------------------------------- */
@@ -63,7 +63,11 @@
 
 #search {
     display: flex;
-    width: 80%;
+    width: 70%;
+}
+
+#search img[class="icon"] {
+    margin-right: 1rem;
 }
 
 input[type="search"] {
@@ -77,13 +81,13 @@ input[type="search"] {
     width: 20%;
     padding: 1rem;
     display: grid;
-    gap: 1rem;  
+    gap: 1.8rem;  
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
 }
 
 .icon {
-    width: 2rem;
+    width: 1.8rem;
 }
 
 .profile-picture {
@@ -138,7 +142,7 @@ input[type="search"] {
 #main-content {
     display: grid;
     gap: 2rem;
-    grid-template: repeat(auto-fit, minmax(150px, 1fr)) / 2fr 1fr;
+    grid-template: repeat(auto-fit, minmax(150px, 1fr)) / 2.4fr 1fr;
     padding: 2rem;
 }
 
