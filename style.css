@@ -139,7 +139,7 @@ input[type="search"] {
     border-radius: 2rem;
 }
 
-#main-content {
+#content {
     display: grid;
     gap: 2rem;
     grid-template: repeat(auto-fit, minmax(150px, 1fr)) / 2.4fr 1fr;
@@ -192,7 +192,7 @@ input[type="search"] {
 }
 
 #trending-section {
-    grid-column: 2 / 3;
+    margin-top: 2rem;
 }
 
 #trending-profiles {
