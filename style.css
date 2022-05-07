@@ -17,6 +17,8 @@
     padding: 1.5rem;
     color: #F8ECD1;
     background-color: #85586F;
+    z-index: 1;
+    box-shadow: 0px 0px 8px 2px #2b1a23;
 }
 
 #nav-list {
@@ -63,6 +65,10 @@
 #dashboard {
     background-color: #DEB6AB;
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    box-shadow: 0px 0px 10px #2b1a23;
 }
 
 .header-sub-section {
@@ -295,4 +301,23 @@ input[type="search"]:focus {
 .trending-profile-details {
     margin-left: 1rem;
     color: #85586F;
+}
+
+footer {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #F8ECD1;
+    background-color: #85586F;
+    font-size: 1.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-top: 1px solid #F8ECD1;
+}
+
+footer a {
+    color: #F8ECD1;
+    font-weight: bold;
+    text-decoration: none;
 }
