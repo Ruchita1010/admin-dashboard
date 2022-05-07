@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -12,7 +15,8 @@
 
 #navbar {
     padding: 1.5rem;
-    background-color: royalblue;
+    color: #F8ECD1;
+    background-color: #85586F;
 }
 
 #nav-list {
@@ -20,6 +24,7 @@
     gap: 1rem;
     justify-content: flex-start;
     margin-top: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 #nav-list li {
@@ -33,10 +38,16 @@
     font-size: 1.2rem;
 }
 
+.navbar-item:hover {
+    cursor: pointer;
+    transform: scale(1.06);
+}
+
 #logo {
     font-size: 2rem;
     font-weight: bold;
     padding: 1rem 0rem;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 #logo img {
@@ -50,7 +61,8 @@
 /* ------------------------------------------- */
 
 #dashboard {
-    background-color: rebeccapurple;
+    background-color: #DEB6AB;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .header-sub-section {
@@ -58,7 +70,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: antiquewhite;
+    background-color: #F8ECD1;
 }
 
 #search {
@@ -68,13 +80,25 @@
 
 #search img[class="icon"] {
     margin-right: 1rem;
+    margin-top: 0.2rem;
 }
 
 input[type="search"] {
     flex: 1;
     max-height: 2rem;
     border-radius: 1rem;
+    background-color: #DEB6AB;
     border: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #85586F;
+    outline: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+input[type="search"]:focus {
+    transform: scale(1.02);
+    border: 1px solid #85586F;
 }
 
 #account {
@@ -90,7 +114,13 @@ input[type="search"] {
     width: 1.8rem;
 }
 
+.icon:hover {
+    cursor: pointer;
+    transform: scale(1.06);
+}
+
 .username {
+    color: #85586F;
     font-weight: bold;
 }
 
@@ -98,13 +128,19 @@ input[type="search"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    background-color: #F8ECD1;
     border-radius: 50%;
+}
+
+.profile-picture:hover {
+    cursor: pointer;
+    transform: scale(1.06);
 }
 
 .profile-picture img {
     max-width: 100%;
     max-height: 100%;
+    border-radius: 50%;
 }
 
 #admin-profile {
@@ -123,6 +159,7 @@ input[type="search"] {
 
 #greeting p:nth-child(1) {
     font-size: 1.2rem;
+    color: #85586F;
 }
 
 #greeting p:nth-child(2) {
@@ -140,7 +177,16 @@ input[type="search"] {
 #buttons > input[type="button"] {
     padding: 0.6rem 1.6rem;
     font-size: 1rem;
+    color: #F8ECD1;
+    background-color: #85586F;
+    font-family: 'Source Sans Pro', sans-serif;
     border-radius: 2rem;
+    border: none;
+}
+
+#buttons > input[type="button"]:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 #content {
@@ -154,20 +200,26 @@ input[type="search"] {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    background-color: rgb(155, 15, 155);
 }
 
 .section-title {
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
+    color: #85586F;
 }
 
 .project {
     padding: 1.2rem;
     font-size: 1.1rem;
-    border-radius: 1rem;
-    background-color: #22adc5;
-    border-left: 10px solid salmon;
+    color: #85586F;
+    border-radius: 8px;
+    background-color: #F8ECD1;
+    border-left: 8px solid #85586F;
+}
+
+.project:hover {
+    cursor: pointer;
+    transform: scale(1.02);
 }
 
 .options {
@@ -183,21 +235,37 @@ input[type="search"] {
 #announcements {
     font-size: 1rem;
     padding: 0.8rem;
+    color: #85586F;
     border-radius: 0.6rem;
-    background-color: #22adc5;
+    background-color: #F8ECD1;
+}
+
+#announcements:hover {
+    cursor: pointer;
+    transform: scale(1.02);
 }
 
 .announcement:not(:last-child) {
     padding: 0.8rem;
-    border-bottom: 1px solid #080808;
+    border-bottom: 1px solid #85586F;
 }
 
 .announcement:last-child {
     padding: 1rem;
 }
 
+.announcement:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
 #trending-section {
     margin-top: 2rem;
+}
+
+#trending-section:hover {
+    cursor: pointer;
+    transform: scale(1.02);
 }
 
 #trending-profiles {
@@ -207,7 +275,7 @@ input[type="search"] {
     font-size: 1rem;
     padding: 1.4rem;
     border-radius: 0.6rem;
-    background-color: #22adc5;
+    background-color: #F8ECD1;
 }
 
 .trending-profile {
@@ -215,6 +283,10 @@ input[type="search"] {
     align-items: center;
 }
 
+.trending-profile:hover {
+    cursor: pointer;
+    transform: scale(1.06);
+}
 .trending-profile > .profile-picture {
     width: 4rem;
     height: 4rem;
@@ -222,4 +294,5 @@ input[type="search"] {
 
 .trending-profile-details {
     margin-left: 1rem;
+    color: #85586F;
 }
