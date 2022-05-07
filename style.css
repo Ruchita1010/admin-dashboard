@@ -7,6 +7,13 @@
     box-sizing: border-box;
 }
 
+:root {
+    --blackberry: hsl(329, 20%, 43%);
+    --pale-chestnut: hsl(13, 44%, 77%);
+    --champagne: hsl(42, 74%, 90%);
+    --raisin-black: hsl(328, 25%, 14%);
+}
+
 #container {
     min-height: 100vh;
     display: grid;
@@ -15,10 +22,10 @@
 
 #navbar {
     padding: 1.5rem;
-    color: #F8ECD1;
-    background-color: #85586F;
+    color: var(--champagne);
+    background-color: var(--blackberry);
     z-index: 1;
-    box-shadow: 0px 0px 8px 2px #2b1a23;
+    box-shadow: 0px 0px 8px 2px var(--raisin-black);
 }
 
 #nav-list {
@@ -63,12 +70,12 @@
 /* ------------------------------------------- */
 
 #dashboard {
-    background-color: #DEB6AB;
+    background-color: var(--pale-chestnut);
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 header {
-    box-shadow: 0px 0px 10px #2b1a23;
+    box-shadow: 0px 0px 10px var(--raisin-black);
 }
 
 .header-sub-section {
@@ -76,7 +83,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #F8ECD1;
+    background-color: var(--champagne);
 }
 
 #search {
@@ -93,18 +100,18 @@ input[type="search"] {
     flex: 1;
     max-height: 2rem;
     border-radius: 1rem;
-    background-color: #DEB6AB;
+    background-color: var(--pale-chestnut);
     border: none;
     padding: 1rem;
     font-size: 1.2rem;
-    color: #85586F;
+    color: var(--blackberry);
     outline: none;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 input[type="search"]:focus {
     transform: scale(1.02);
-    border: 1px solid #85586F;
+    border: 1px solid var(--blackberry);
 }
 
 #account {
@@ -126,7 +133,7 @@ input[type="search"]:focus {
 }
 
 .username {
-    color: #85586F;
+    color: var(--blackberry);
     font-weight: bold;
 }
 
@@ -134,7 +141,7 @@ input[type="search"]:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F8ECD1;
+    background-color: var(--champagne);
     border-radius: 50%;
 }
 
@@ -165,7 +172,7 @@ input[type="search"]:focus {
 
 #greeting p:nth-child(1) {
     font-size: 1.2rem;
-    color: #85586F;
+    color: var(--blackberry);
 }
 
 #greeting p:nth-child(2) {
@@ -183,8 +190,8 @@ input[type="search"]:focus {
 #buttons > input[type="button"] {
     padding: 0.6rem 1.6rem;
     font-size: 1rem;
-    color: #F8ECD1;
-    background-color: #85586F;
+    color: var(--champagne);
+    background-color: var(--blackberry);
     font-family: 'Source Sans Pro', sans-serif;
     border-radius: 2rem;
     border: none;
@@ -211,16 +218,16 @@ input[type="search"]:focus {
 .section-title {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #85586F;
+    color: var(--blackberry);
 }
 
 .project {
     padding: 1.2rem;
     font-size: 1.1rem;
-    color: #85586F;
+    color: var(--blackberry);
     border-radius: 8px;
-    background-color: #F8ECD1;
-    border-left: 8px solid #85586F;
+    background-color: var(--champagne);
+    border-left: 8px solid var(--blackberry);
 }
 
 .project:hover {
@@ -241,9 +248,9 @@ input[type="search"]:focus {
 #announcements {
     font-size: 1rem;
     padding: 0.8rem;
-    color: #85586F;
+    color: var(--blackberry);
     border-radius: 0.6rem;
-    background-color: #F8ECD1;
+    background-color: var(--champagne);
 }
 
 #announcements:hover {
@@ -253,7 +260,7 @@ input[type="search"]:focus {
 
 .announcement:not(:last-child) {
     padding: 0.8rem;
-    border-bottom: 1px solid #85586F;
+    border-bottom: 1px solid var(--blackberry);
 }
 
 .announcement:last-child {
@@ -281,7 +288,7 @@ input[type="search"]:focus {
     font-size: 1rem;
     padding: 1.4rem;
     border-radius: 0.6rem;
-    background-color: #F8ECD1;
+    background-color: var(--champagne);
 }
 
 .trending-profile {
@@ -300,7 +307,7 @@ input[type="search"]:focus {
 
 .trending-profile-details {
     margin-left: 1rem;
-    color: #85586F;
+    color: var(--blackberry);
 }
 
 footer {
@@ -309,15 +316,15 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    color: #F8ECD1;
-    background-color: #85586F;
+    color: var(--champagne);
+    background-color: var(--blackberry);
     font-size: 1.2rem;
     font-family: 'Source Sans Pro', sans-serif;
-    border-top: 1px solid #F8ECD1;
+    border-top: 1px solid var(--champagne);
 }
 
 footer a {
-    color: #F8ECD1;
+    color: var(--champagne);
     font-weight: bold;
     text-decoration: none;
 }
